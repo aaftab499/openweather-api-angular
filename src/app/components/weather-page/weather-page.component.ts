@@ -48,7 +48,7 @@ export class WeatherPageComponent implements OnInit {
   }
 
   getWeather(location) {
-    let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=f5f7c182f4a8850365de9575b191124b&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=0e77dd366d37d00b0ae3103cf7fb7aab&units=metric`;
     this.http.get(url).subscribe((res) => {
       console.log(res);
       this.currentLocation = res['city']['name']
